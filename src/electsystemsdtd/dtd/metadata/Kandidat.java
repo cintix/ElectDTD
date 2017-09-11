@@ -4,7 +4,7 @@ package electsystemsdtd.dtd.metadata;
  *
  * @author migo
  */
-public class Candidate {
+public class Kandidat {
 
     private int id = 1;
     private int partiId = 1;
@@ -36,7 +36,7 @@ public class Candidate {
 
     @Override
     public String toString() {
-        return "Candidate{" + "id=" + id + ", partiId=" + partiId + ", name=" + name + '}';
+        return "Kandidat{" + "id=" + id + ", partiId=" + partiId + ", name=" + name + '}';
     }
 
 }
