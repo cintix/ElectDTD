@@ -1,0 +1,34 @@
+
+### Eclipse ###
+.classpath
+.project
+.settings
+.svn
+*.swp
+*.swo
+*.swn
+.DS_Store
+.gradle
+build/
+dist/
+.idea/
+.settings/
+bin/
+
+demo/*
+
+
+build/
+nbbuild/
+dist/
+nbdist/
+.gradle
+
+### Mac ###
+.DS_Store
+
+### Eclipse ###
+.classpath
+.project
+.settings
+
