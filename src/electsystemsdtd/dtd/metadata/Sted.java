@@ -10,6 +10,15 @@ public class Sted {
     private int parentId = 101;
     private String name = "1. Østerbro";
 
+    public Sted() {
+    }
+
+    public Sted(int id, int parentId, String name) {
+        this.id = id;
+        this.parentId = parentId;
+        this.name = name;
+    }
+
     public int getId() {
         return id;
     }

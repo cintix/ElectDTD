@@ -10,6 +10,16 @@ public class Kandidat {
     private int partiId = 1;
     private String name = "Helle Thorning-Schmidt";
 
+    
+    public Kandidat() {
+    }
+
+    public Kandidat(int id, int partiId, String name) {
+        this.id = id;
+        this.partiId = partiId;
+        this.name = name;
+    }    
+    
     public int getId() {
         return id;
     }

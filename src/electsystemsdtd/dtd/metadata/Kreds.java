@@ -10,6 +10,15 @@ public class Kreds {
     private int parentId = 9000100;
     private String name = "Sundbyvesterkredsen";
 
+    public Kreds() {
+    }
+
+    public Kreds(int id, int parentId, String name) {
+        this.id = id;
+        this.parentId = parentId;
+        this.name = name;
+    }
+
     public int getId() {
         return id;
     }
@@ -38,6 +47,5 @@ public class Kreds {
     public String toString() {
         return "Kreds{" + "id=" + id + ", parentId=" + parentId + ", name=" + name + '}';
     }
-
 
 }

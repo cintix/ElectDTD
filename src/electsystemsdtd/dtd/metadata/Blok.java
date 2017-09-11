@@ -4,7 +4,7 @@ package electsystemsdtd.dtd.metadata;
  *
  * @author migo
  */
-public class Bloc {
+public class Blok {
 
     private int id = 1;
     private String name = "red";
@@ -13,10 +13,10 @@ public class Bloc {
         return id;
     }
 
-    public Bloc() {
+    public Blok() {
     }
 
-    public Bloc(int id, String name) {
+    public Blok(int id, String name) {
         this.id = id;
         this.name = name;
     }

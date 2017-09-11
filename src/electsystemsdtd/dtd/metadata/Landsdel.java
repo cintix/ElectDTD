@@ -10,6 +10,14 @@ public class Landsdel {
     private int parentId = 999;
     private String name = "Hovedstaden";
 
+    public Landsdel() {
+    }
+    
+    public Landsdel(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+    
     public int getId() {
         return id;
     }

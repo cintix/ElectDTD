@@ -10,6 +10,15 @@ public class Storkreds {
     private int parentId = 7;
     private String name = "Københavns Storkreds";
 
+    public Storkreds() {
+    }
+
+    public Storkreds(int id, int parentId, String name) {
+        this.id = id;
+        this.parentId = parentId;
+        this.name = name;
+    }
+
     public int getId() {
         return id;
     }
@@ -38,6 +47,5 @@ public class Storkreds {
     public String toString() {
         return "Storkreds{" + "id=" + id + ", parentId=" + parentId + ", name=" + name + '}';
     }
-
 
 }

@@ -15,6 +15,16 @@ public class Parti {
     private String majorParty = "Y";
     private String independent = "N";
 
+    public Parti() {
+    }
+
+    public Parti(int id, String name, String shortName, String letter) {
+        this.id = id;
+        this.name = name;
+        this.shortName = shortName;
+        this.letter = letter;
+    }
+
     public int getId() {
         return id;
     }

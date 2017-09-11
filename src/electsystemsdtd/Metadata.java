@@ -1,5 +1,6 @@
 package electsystemsdtd;
 
+import electsystemsdtd.dtd.metadata.Blok;
 import electsystemsdtd.dtd.metadata.Kandidat;
 import electsystemsdtd.dtd.metadata.Kommune;
 import electsystemsdtd.dtd.metadata.Kreds;
@@ -18,23 +19,43 @@ import java.util.List;
 public class Metadata {
 
     private Land land = new Land();
-    private List<Landsdel> landsdel = new LinkedList<>();
-    private List<Region> region = new LinkedList<>();
-    private List<Storkreds> storkreds = new LinkedList<>();
-    private List<Kreds> kreds = new LinkedList<>();
-    private List<Kommune> kommune = new LinkedList<>();
-    private List<Parti> parti = new LinkedList<>();
-    private List<Kandidat> kandidat = new LinkedList<>();
+    private List<Landsdel> landsdele = new LinkedList<>();
+    private List<Region> regioner = new LinkedList<>();
+    private List<Storkreds> storkredser = new LinkedList<>();
+    private List<Kreds> kredser = new LinkedList<>();
+    private List<Kommune> kommuner = new LinkedList<>();
+    private List<Parti> partier = new LinkedList<>();
+    private List<Kandidat> kandidater = new LinkedList<>();
+    private List<Blok> bloks = new LinkedList<>();
+    
 
     public Metadata() {
         
-        landsdel.add(new Landsdel());
-        region.add(new Region());
-        storkreds.add(new Storkreds());
-        kreds.add(new Kreds());
-        kommune.add(new Kommune());
-        parti.add(new Parti());
-        kandidat.add(new Kandidat());
+        landsdele.add(new Landsdel());
+        landsdele.add(new Landsdel(8, "Sjælland - Syddanmark"));
+        
+        regioner.add(new Region());
+        regioner.add(new Region(84979, 8, "Region Sjælland"));
+        
+        storkredser.add(new Storkreds());
+        storkredser.add(new Storkreds(9000500 ,8,"Sjællands Storkreds"));
+        
+        kredser.add(new Kreds());
+        kredser.add(new Kreds(9000500, 9000506,"Køgekredsen"));
+        
+        
+        kommuner.add(new Kommune());
+        kommuner.add(new Kommune(161,9000208, 84982,"Glostrup"));
+        
+        partier.add(new Parti());
+        partier.add(new Parti(8,"Venstre", "venstre", "V"));
+        kandidater.add(new Kandidat());
+        kandidater.add(new Kandidat(983, 8, "Lars Løkke Rasmussen"));
+        
+        bloks.add(new Blok(0,"none"));
+        bloks.add(new Blok(1, "red"));
+        bloks.add(new Blok(2,"blue"));
+        
     }
 
     public Land getLand() {
@@ -45,60 +66,68 @@ public class Metadata {
         this.land = land;
     }
 
-    public List<Landsdel> getLandsdel() {
-        return landsdel;
+    public List<Landsdel> getLandsdele() {
+        return landsdele;
     }
 
-    public void setLandsdel(List<Landsdel> landsdel) {
-        this.landsdel = landsdel;
+    public void setLandsdele(List<Landsdel> landsdele) {
+        this.landsdele = landsdele;
     }
 
-    public List<Region> getRegion() {
-        return region;
+    public List<Region> getRegioner() {
+        return regioner;
     }
 
-    public void setRegion(List<Region> region) {
-        this.region = region;
+    public void setRegioner(List<Region> regioner) {
+        this.regioner = regioner;
     }
 
-    public List<Storkreds> getStorkreds() {
-        return storkreds;
+    public List<Storkreds> getStorkredser() {
+        return storkredser;
     }
 
-    public void setStorkreds(List<Storkreds> storkreds) {
-        this.storkreds = storkreds;
+    public void setStorkredser(List<Storkreds> storkredser) {
+        this.storkredser = storkredser;
     }
 
-    public List<Kreds> getKreds() {
-        return kreds;
+    public List<Kreds> getKredser() {
+        return kredser;
     }
 
-    public void setKreds(List<Kreds> kreds) {
-        this.kreds = kreds;
+    public void setKredser(List<Kreds> kredser) {
+        this.kredser = kredser;
     }
 
-    public List<Kommune> getKommune() {
-        return kommune;
+    public List<Kommune> getKommuner() {
+        return kommuner;
     }
 
-    public void setKommune(List<Kommune> kommune) {
-        this.kommune = kommune;
+    public void setKommuner(List<Kommune> kommuner) {
+        this.kommuner = kommuner;
     }
 
-    public List<Parti> getParti() {
-        return parti;
+    public List<Parti> getPartier() {
+        return partier;
     }
 
-    public void setParti(List<Parti> parti) {
-        this.parti = parti;
+    public void setPartier(List<Parti> partier) {
+        this.partier = partier;
     }
 
-    public List<Kandidat> getKandidat() {
-        return kandidat;
+    public List<Kandidat> getKandidater() {
+        return kandidater;
     }
 
-    public void setKandidat(List<Kandidat> kandidat) {
-        this.kandidat = kandidat;
+    public void setKandidater(List<Kandidat> kandidater) {
+        this.kandidater = kandidater;
+    }
+
+    public List<Blok> getBloks() {
+        return bloks;
+    }
+
+    public void setBloks(List<Blok> bloks) {
+        this.bloks = bloks;
     }
 
 }

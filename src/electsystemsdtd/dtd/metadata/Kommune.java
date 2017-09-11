@@ -7,8 +7,19 @@ package electsystemsdtd.dtd.metadata;
 public class Kommune {
 
     private int id = 12;
-    private int parentId = 9000208;
+    private int kredsId = 9000208;
+    private int regionId = 84982;
     private String name = "Ballerup";
+
+    public Kommune() {
+    }
+
+    public Kommune(int id, int kredsId, int regionId, String name) {
+        this.id = id;
+        this.kredsId = kredsId;
+        this.regionId = regionId;
+        this.name = name;
+    }
 
     public int getId() {
         return id;
@@ -18,12 +29,12 @@ public class Kommune {
         this.id = id;
     }
 
-    public int getParentId() {
-        return parentId;
+    public int getKredsId() {
+        return kredsId;
     }
 
-    public void setParentId(int parentId) {
-        this.parentId = parentId;
+    public void setKredsId(int kredsId) {
+        this.kredsId = kredsId;
     }
 
     public String getName() {
@@ -34,10 +45,17 @@ public class Kommune {
         this.name = name;
     }
 
-    @Override
-    public String toString() {
-        return "Kommune{" + "id=" + id + ", parentId=" + parentId + ", name=" + name + '}';
+    public int getRegionId() {
+        return regionId;
     }
 
+    public void setRegionId(int regionId) {
+        this.regionId = regionId;
+    }
+
+    @Override
+    public String toString() {
+        return "Kommune{" + "id=" + id + ", kredsId=" + kredsId + ", regionId=" + regionId + ", name=" + name + '}';
+    }
 
 }

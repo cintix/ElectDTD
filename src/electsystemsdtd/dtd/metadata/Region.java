@@ -10,6 +10,15 @@ public class Region {
     private int parentId = 7;
     private String name = "Region Hovedstaden";
 
+    public Region() {
+    }
+    
+    public Region(int id, int parentId, String name) {
+        this.id = id;
+        this.parentId = parentId;
+        this.name = name;
+    }
+
     public int getId() {
         return id;
     }
