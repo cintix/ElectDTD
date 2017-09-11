@@ -1,4 +1,4 @@
-package electsystemsdtd.dtd;
+package electsystemsdtd.dtd.metadata;
 
 /**
  *

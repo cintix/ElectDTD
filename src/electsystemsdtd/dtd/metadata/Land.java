@@ -1,24 +1,16 @@
-package electsystemsdtd.dtd;
+package electsystemsdtd.dtd.metadata;
 
 /**
  *
  * @author migo
  */
-public class Bloc {
+public class Land {
 
-    private int id = 1;
-    private String name = "red";
+    private int id = 999;
+    private String name = "Hele landet";
 
     public int getId() {
         return id;
-    }
-
-    public Bloc() {
-    }
-
-    public Bloc(int id, String name) {
-        this.id = id;
-        this.name = name;
     }
 
     public void setId(int id) {
@@ -35,7 +27,7 @@ public class Bloc {
 
     @Override
     public String toString() {
-        return "Bloc{" + "id=" + id + ", name=" + name + '}';
+        return "Land{" + "id=" + id + ", name=" + name + '}';
     }
 
 }
