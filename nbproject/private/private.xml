@@ -3,9 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/migo/project/ElectSystemsDTD/src/electsystemsdtd/Party.java</file>
-            <file>file:/Users/migo/project/ElectSystemsDTD/src/electsystemsdtd/Candidate.java</file>
-            <file>file:/Users/migo/project/ElectSystemsDTD/src/electsystemsdtd/Bloc.java</file>
+            <file>file:/Users/migo/project/ElectSystemsDTD/src/electsystemsdtd/Metadata.java</file>
+            <file>file:/Users/migo/project/ElectSystemsDTD/src/electsystemsdtd/dtd/results/LandResult.java</file>
+            <file>file:/Users/migo/project/ElectSystemsDTD/src/electsystemsdtd/dtd/results/Result.java</file>
+            <file>file:/Users/migo/project/ElectSystemsDTD/electsystems.xsd</file>
+            <file>file:/Users/migo/project/ElectSystemsDTD/src/electsystemsdtd/dtd/metadata/Land.java</file>
+            <file>file:/Users/migo/project/ElectSystemsDTD/src/electsystemsdtd/dtd/results/CandidateResults.java</file>
+            <file>file:/Users/migo/project/ElectSystemsDTD/src/electsystemsdtd/dtd/results/BlocResult.java</file>
+            <file>file:/Users/migo/project/ElectSystemsDTD/src/electsystemsdtd/ElectSystemsDTD.java</file>
+            <file>file:/Users/migo/project/ElectSystemsDTD/src/electsystemsdtd/dtd/results/ResultList.java</file>
         </group>
     </open-files>
 </project-private>

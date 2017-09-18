@@ -7,6 +7,7 @@ import electsystemsdtd.dtd.metadata.Kreds;
 import electsystemsdtd.dtd.metadata.Land;
 import electsystemsdtd.dtd.metadata.Landsdel;
 import electsystemsdtd.dtd.metadata.Parti;
+import electsystemsdtd.dtd.metadata.PartiGruppe;
 import electsystemsdtd.dtd.metadata.Region;
 import electsystemsdtd.dtd.metadata.Storkreds;
 import java.util.LinkedList;
@@ -27,35 +28,37 @@ public class Metadata {
     private List<Parti> partier = new LinkedList<>();
     private List<Kandidat> kandidater = new LinkedList<>();
     private List<Blok> bloks = new LinkedList<>();
-    
+    private List<PartiGruppe> partiGrupper = new LinkedList<>();
 
     public Metadata() {
-        
+
         landsdele.add(new Landsdel());
         landsdele.add(new Landsdel(8, "Sjælland - Syddanmark"));
-        
+
         regioner.add(new Region());
         regioner.add(new Region(84979, 8, "Region Sjælland"));
-        
+
         storkredser.add(new Storkreds());
-        storkredser.add(new Storkreds(9000500 ,8,"Sjællands Storkreds"));
-        
+        storkredser.add(new Storkreds(9000500, 8, "Sjællands Storkreds"));
+
         kredser.add(new Kreds());
-        kredser.add(new Kreds(9000500, 9000506,"Køgekredsen"));
-        
-        
+        kredser.add(new Kreds(9000500, 9000506, "Køgekredsen"));
+
         kommuner.add(new Kommune());
-        kommuner.add(new Kommune(161,9000208, 84982,"Glostrup"));
-        
+        kommuner.add(new Kommune(161, 9000208, 84982, "Glostrup"));
+
         partier.add(new Parti());
-        partier.add(new Parti(8,"Venstre", "venstre", "V"));
+        partier.add(new Parti(8, "Venstre", "venstre", "V"));
+
+        partiGrupper.add(new PartiGruppe());
+
         kandidater.add(new Kandidat());
         kandidater.add(new Kandidat(983, 8, "Lars Løkke Rasmussen"));
-        
-        bloks.add(new Blok(0,"none"));
+
+        bloks.add(new Blok(0, "none"));
         bloks.add(new Blok(1, "red"));
-        bloks.add(new Blok(2,"blue"));
-        
+        bloks.add(new Blok(2, "blue"));
+
     }
 
     public Land getLand() {
@@ -128,6 +131,19 @@ public class Metadata {
 
     public void setBloks(List<Blok> bloks) {
         this.bloks = bloks;
+    }
+
+    public List<PartiGruppe> getPartiGrupper() {
+        return partiGrupper;
+    }
+
+    public void setPartiGrupper(List<PartiGruppe> partiGrupper) {
+        this.partiGrupper = partiGrupper;
+    }
+
+    @Override
+    public String toString() {
+        return "Metadata{" + "land=" + land + ", landsdele=" + landsdele + ", regioner=" + regioner + ", storkredser=" + storkredser + ", kredser=" + kredser + ", kommuner=" + kommuner + ", partier=" + partier + ", kandidater=" + kandidater + ", bloks=" + bloks + ", partiGrupper=" + partiGrupper + '}';
     }
 
 }
